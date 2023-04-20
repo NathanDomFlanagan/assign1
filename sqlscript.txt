@@ -1,0 +1,25 @@
+<---All the SQL scripts I used--->
+
+$sql = "CREATE TABLE $table (
+                    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                    statuscode VARCHAR(30) NOT NULL,
+                    status TEXT NOT NULL,
+                    share VARCHAR(20) NOT NULL,
+                    date DATE NOT NULL,
+                    allowlike TINYINT(1) NOT NULL DEFAULT 0,
+                    allowcomments TINYINT(1) NOT NULL DEFAULT 0,
+                    allowshare TINYINT(1) NOT NULL DEFAULT 0
+                )";
+
+$sql = "INSERT INTO assign1 (statuscode, status, share, date, allowlike, allowcomments, allowshare)
+                            VALUES ('$statuscode', '$status', '$share', '$date', $allowlike, $allowcomments, $allowshare)";
+
+$result = $conn->query("SELECT * FROM assign1 WHERE statuscode = '$statuscode'");
+                if ($result->num_rows > 0) 
+                {
+                    $error_message = "The status code already exists. Please try another one!";
+                } 
+
+$sql = "DELETE FROM assign1";
+
+$sql = "SELECT * FROM assign1 WHERE status LIKE '%$searchString%'";

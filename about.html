@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
+    <title>About Page</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <h1>About Page</h1>
+      <h2>Answers to Questions</h2>
+      <ul>
+        <li>
+          <strong>
+            What special features have you done or attempted in creating the
+            website?
+          </strong>
+          <ul>
+            <li>
+              Used PHP to interact with a MySQL database to store and retrieve
+              status data
+            </li>
+            <li>
+              Created separate pages for posting status, searching status, and
+              displaying search results
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong> Which part(s) did you have trouble with? </strong>
+          <ul>
+            <li>
+              At first, I had trouble with setting up the database and
+              connecting to it through PHP, but I fixed the code as it had
+              errors in syntax
+            </li>
+            <li>
+              I also struggled with creating the search functionality that would
+              correctly match the search string to the status column in the
+              database, but with some googling I figured it out
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong> What would you like to do better next time? </strong>
+          <ul>
+            <li>
+              I would like to improve the user interface and design of the
+              website to make it look better, as I didn't use CSS for this
+              assignment as Im not confident in using it
+            </li>
+            <li>
+              I would also like to add more advanced features such as the
+              ability to comment on status updates, or even edit old status
+              updates
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>
+            What have you learnt along the way? Did you use any references or
+            resources during this project? If so, please include the sources.
+          </strong>
+          <ul>
+            <li>
+              I learned how to use PHP to interact with a MySQL database to
+              store and retrieve data, as It took me a while to figure out how
+              to connect to the database
+            </li>
+            <li>
+              I also learned some sql functions to help with my code and any
+              queries
+            </li>
+            <li>During this project, I used the following resources:</li>
+            <ul>
+              <li>
+                I used W3Schools for HTML and PHP syntax
+                (https://www.w3schools.com/)
+              </li>
+              <li>
+                I also used Stack Overflow for any problems I encountered with
+                my code (https://stackoverflow.com/)
+              </li>
+              <li>
+                I looked at the PHP Manual for syntax help as well
+                (https://www.php.net/manual/en/)
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+      <form action="resetdb.php" method="post">
+        <input type="submit" name="reset" value="Reset Database" />
+      </form>
+      <style>
+        a[href="about.html"] {
+          float: right;
+        }
+      </style>
+      <p>
+        <a href="searchstatusform.html"> Search status </a>
+        <a href="about.html"> About the assignment </a>
+      </p>
+      <p>
+        <a href="poststatusform.php"> Post a new status </a>
+      </p>
+      <p>
+        <a href="index.html"> Return to Home page </a>
+      </p>
+    </div>
+  </body>
+</html>
